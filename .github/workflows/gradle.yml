@@ -27,7 +27,7 @@ jobs:
     - name: Find the apk
       run: find . -name "*.apk"
     - name: Upload APK
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with:
         name: app
-        path: output/apk
+        path: app/build/outputs/apk/
